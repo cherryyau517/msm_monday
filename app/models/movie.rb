@@ -1,6 +1,9 @@
 class Movie < ApplicationRecord
   # Direct associations
 
+  has_many   :roles,
+             :dependent => :nullify
+
   # Indirect associations
 
   # Validations
